@@ -8,6 +8,9 @@ denial drivers, and fair lending signals across 58 counties.
 ## Live Dashboard
 [View on Tableau Public](https://public.tableau.com/shared/NYMP2T47W)
 
+## Dashboard Preview
+![California Mortgage Lending Analysis](dashboard_preview.png)
+
 ## Key Findings
 1. Debt-to-income ratio accounts for ~60% of all loan denials in 
    California — the single largest barrier to mortgage approval
@@ -26,6 +29,16 @@ denial drivers, and fair lending signals across 58 counties.
 - Python (pandas) — data cleaning and ETL pipeline
 - SQLite + DB Browser — analytical query layer
 - Tableau Public — interactive dashboard and visualization
+
+## Methodology
+1. Downloaded HMDA LAR dataset from CFPB Data Browser (ffiec.cfpb.gov)
+2. Cleaned and filtered data using Python pandas — removed nulls, 
+   standardized codes, filtered to conventional home purchase loans
+3. Loaded clean CSV into SQLite using DB Browser for SQLite
+4. Executed 5 analytical SQL queries to aggregate data by county, 
+   denial reason, income band, race, and outcome type
+5. Exported query results as CSVs and connected to Tableau Public
+6. Built a 5-chart interactive dashboard with cross-filtering capability
 
 ## Data Source
 Consumer Financial Protection Bureau (CFPB)
