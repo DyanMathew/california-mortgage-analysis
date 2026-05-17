@@ -43,3 +43,6 @@ denial drivers, and fair lending signals across 58 counties.
 ## Data Source
 Consumer Financial Protection Bureau (CFPB)
 Home Mortgage Disclosure Act (HMDA) Loan Application Register 2023
+
+## Author
+Dyan Reji Mathew
